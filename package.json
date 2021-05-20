@@ -1,14 +1,15 @@
 {
-  "name": "React-Template",
+  "name": "react-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react webapck based starter",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config webpack/webpack.config.js --open",
+    "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
+    "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "kkvanonymous",
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.2",
@@ -28,6 +29,7 @@
     "typescript": "^4.2.4",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }
