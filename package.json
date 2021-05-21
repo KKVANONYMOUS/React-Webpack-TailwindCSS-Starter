@@ -1,14 +1,14 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "A react webapck based starter",
+  "description": "A react-webpack based starter",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "lint:fix": "yarn lint --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "keywords": [],
   "author": "kkvanonymous",
@@ -30,11 +30,14 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.1",
+    "prettier": "^2.3.0",
     "react-refresh": "^0.10.0",
     "style-loader": "^2.0.0",
     "typescript": "^4.2.4",
