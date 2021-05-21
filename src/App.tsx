@@ -1,13 +1,18 @@
-import Counter from './Counter'
-import './styles.css'
-
-export const App = () => {
-  const name = 'kkvanonymous'
+import React from 'react'
+import './styles/main.css'
+function App() {
   return (
-    <>
-      <h1>Hey, React Webpack Starter Template- {process.env.NODE_ENV}</h1>
-      <h2>By - {name}</h2>
-      <Counter />
-    </>
+    <div className="h-64">
+      <div className="p-4 m-4 bg-green-600">
+        <h1 className="text-2xl font-bold text-white">Tailwind CSS Demo</h1>
+      </div>
+      <div className="p-4 m-4 bg-green-300 h-full">
+        <h2 className="text-green-900">Have much fun using Tailwind CSS</h2>
+        <button className="bg-purple-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          My Tailwind Button
+        </button>
+      </div>
+    </div>
   )
 }
+export default App
